@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Project</title>
+    <style>
+        h1 {
+            text-align: center;
+            color: #0000FF;
+
+        }
+
+        h2 {
+            text-align: center;
+            border: 1px solid #0000FF;
+            padding: 15px;
+            font-size: 18px;
+            border-radius: 4px;
+        }
+
+        h3 {
+            text-align: center;
+        }
+
+        img {
+            display: block;
+            margin: 0 auto;
+            max-width: 100%;
+            border-radius: 10px;
+        }
+
+        p {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            letter-spacing: 1px;
+            margin: 20 0 10px;
+            gap: 10px;
+        }
+
+        one {
+
+            display: block;
+            margin-top: 10px;
+            justify-content: center;
+            text-align: center;
+            line-height: 1.5px;
+            font-size: 13px;
+        }
+
+        two {
+            display: block;
+            margin-top: 10px;
+            justify-content: center;
+            text-align: center;
+            line-height: 1.5px;
+            font-size: 13px;
+        }
+
+        button {
+            display: block;
+            margin: 20px auto;
+            border: 1px solid #0000FF;
+            background: #0000FF;
+            color: #fff;
+            font-size: 24px;
+            padding: 15px 20px;
+            border: none;
+            border-radius: 10px;
+            transition: all 200ms ease-in-out;
+            box-shadow: rgba(37, 39, 89, 0.08) 0px 8px 8px 0;
+            gap: 10px;
+        }
+
+        button:hover {
+            background: #fff;
+            color: #0000FF;
+            opacity: 0.9;
+            cursor: pointer;
+            border: 1px solid #0000FF;
+        }
+
+        .container {
+            background-image: linear-gradient(white);
+            max-width: 100%;
+            margin: 0 auto;
+            padding: 30px 60px;
+            gap: 50px;
+        }
+
+        .Read-more {
+            display: flex;
+            justify-content: center;
+            color: #0000FF;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: 100;
+        }
+
+        .Read-more:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Coding</h1>
+        <h2>
+            All I love About Coding
+        </h2>
+        <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/060/830/original/coding.jpg?1672439483"
+            alt="code">
+        <h3><span style="color:blue;">Why do I love Coding?</span></h3>
+        <hr>
+        <p class="one">
+            I love coding for different reasons. <br>
+            The first thing that attracted me, <br>
+            to coding was how websites were created. <br>
+            <em>
+                The sheer joy of making things or products <br>
+                people will get to enjoy and benefit from is a blessing <br>
+            </em>
+        </p>
+        <h3>The problems I faced were:</h3>
+        <p class="two">
+            I was always curious and when I eventually <br>
+            started coding I made mistakes. <strong>From different <br>
+                stacks, to inconsistency, to lack of guidance, <br>
+                and lack of resources.
+            </strong>
+            <br>
+        </p>
+
+        <a href="https://henrikwarne.com/2012/06/02/why-i-love-coding/" target="_blank" class="Read-more">
+            Read on henrik warne's blog
+        </a>
+
+        <button>
+            Learn more about Coding
+        </button>
+        <p class="footer">
+            This page was built by Whitney Ebuh
+        </p>
+
+    </div>
+
+    <script>
+        function learn() {
+            let name = prompt("What is your name?");
+            let reason = prompt("Why do you love coding?");
+
+            if(name !== "" && reason !== "") {
+                alert(name + " You code for " + reason + "! Don't give up!");
+                
+            } else {
+                alert("fine");
+            }
+
+        }
+        let learnButton = document.querySelector("button");
+        learnButton.addEventListener("click", learn);
+    </script>
+</body>
+
+</html>
